@@ -18,7 +18,7 @@ namespace Marvel
             var personagens = new List<Personagens>();
             var networkManager = new NetworkManager();
             var hash = MarvelApiConfig.Hash;
-            var ts = MarvelApiConfig.TimeStamp;
+            var ts = MarvelApiConfig.Ts;
             var json = networkManager.GetJson($"https://gateway.marvel.com:443/v1/public/characters?ts={ts}&apikey=4d3de4314998e1285b426a3b3fd9fc66&hash={hash}");
             var personagensJson = JsonConvert.DeserializeObject<dynamic>(json);
 
