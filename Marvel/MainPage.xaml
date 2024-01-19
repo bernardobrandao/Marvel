@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Marvel.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Busca Marvel" HorizontalTextAlignment="Start" TextColor="Red" FontAttributes="Bold" FontSize="36"/>
+        </Frame>
+        <Label Text="Bernardo Brandão" HorizontalTextAlignment="End" TextColor="Red" FontSize="36"/>
+
+        <Label Text="Nome do Personagem" FontSize="Subtitle" Padding="30,10,30,10"/>
+        <Entry Placeholder="Digite o nome do personagem" PlaceholderColor="Red" BackgroundColor="White" FontSize="Subtitle" x:Name="BUSCAR"/>
+        <Button Text="Buscar" Clicked="Button_Clicked" FontSize="Subtitle" Padding="30,10,30,10" x:Name="BOTAO"/>
+        <Frame Padding="30,24,30,0">
+            <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="SpaceEvenly" AlignItems="Start" x:Name="LISTA">
+            </FlexLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
